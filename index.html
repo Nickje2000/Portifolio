@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nickje2000's Portifolio :D</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for a clean, modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Dark charcoal background */
+            color: #e2e8f0; /* Light gray text */
+        }
+        /* Custom scrollbar for a nicer look in dark mode */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2d3748; /* Darker track */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #6b46c1; /* Purple thumb */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #805ad5; /* Lighter purple on hover */
+        }
+
+        /* Subtle text shadow for headings to give a "glow" effect */
+        .text-glow {
+            text-shadow: 0 0 8px rgba(139, 92, 246, 0.4), 0 0 15px rgba(139, 92, 246, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Main container with responsive padding and max-width -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+        <!-- Card-like structure for the portfolio content -->
+        <div class="bg-gray-800 shadow-2xl rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 w-full max-w-4xl border border-gray-700">
+
+            <!-- Header / Navigation -->
+            <header class="text-center mb-10">
+                <h1 class="text-4xl sm:text-5xl font-bold text-purple-400 mb-2 text-glow">Nickje2000's Protifolio</h1>
+                <p class="text-lg text-gray-400">Coding purely for fun :D</p>
+            </header>
+
+            <hr class="border-t-2 border-purple-800 my-8" />
+
+            <!-- About Me Section -->
+            <section id="about" class="mb-12">
+                <h2 class="text-3xl font-semibold text-purple-500 mb-4">About Me</h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Hey there! I'm Nick, a developer who loves building things with code. I'm always learning
+                    new tools and love to experiment.
+                </p>
+                <p class="text-gray-300 leading-relaxed mt-4">
+                    When I'm not coding, you can find me playing games! I love milsims and tactical shooters!.
+                </p>
+            </section>
+
+            <hr class="border-t-2 border-purple-800 my-8" />
+
+            <!-- Skills Section -->
+            <section id="skills" class="mb-12">
+                <h2 class="text-3xl font-semibold text-purple-500 mb-4">Skills</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-purple-900 text-purple-300 px-4 py-2 rounded-full font-medium text-sm shadow-lg">Python</span>
+                    <span class="bg-purple-900 text-purple-300 px-4 py-2 rounded-full font-medium text-sm shadow-lg">Java</span>
+                    <span class="bg-purple-900 text-purple-300 px-4 py-2 rounded-full font-medium text-sm shadow-lg">HTML</span>
+                    <span class="bg-purple-900 text-purple-300 px-4 py-2 rounded-full font-medium text-sm shadow-lg">CSS</span>
+                    <span class="bg-purple-900 text-purple-300 px-4 py-2 rounded-full font-medium text-sm shadow-lg">Git / GitHub</span>
+                    <span class="bg-purple-900 text-purple-300 px-4 py-2 rounded-full font-medium text-sm shadow-lg">Lua</span>
+                    <!-- Add more skills based on your expertise -->
+                </div>
+            </section>
+
+            <hr class="border-t-2 border-purple-800 my-8" />
+
+            <!-- Projects Section -->
+            <section id="projects" class="mb-12">
+                <h2 class="text-3xl font-semibold text-purple-500 mb-6">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <!-- Project Card 1: Landing Page -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg border border-gray-600 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-semibold text-gray-200 mb-2">Modern Landing Page</h3>
+                        <p class="text-gray-400 mb-4">
+                            A clean and responsive landing page. It's built to look great on any device.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs font-medium">HTML</span>
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs font-medium">CSS</span>
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs font-medium">Responsive Design</span>
+                        </div>
+                        <a href="https://github.com/Nickje2000/landing-page" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-200 font-medium">
+                            View on GitHub
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0l-7 7"></path></svg>
+                        </a>
+                    </div>
+
+                    <!-- Project Card 2: GPDB (General Purpose Discord Bot) -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg border border-gray-600 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-semibold text-gray-200 mb-2">GPDB (Discord Bot)</h3>
+                        <p class="text-gray-400 mb-4">
+                            A general-purpose Discord bot. This project shows my skills in creating interactive
+                            applications and working with APIs to bring features to online communities.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs font-medium">Discord API</span>
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs font-medium">Bot Development</span>
+                        </div>
+                        <a href="https://github.com/Nickje2000/GPDB" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-200 font-medium">
+                            View on GitHub
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0l-7 7"></path></svg>
+                        </a>
+                    </div>
+
+                    <!-- Project Card 3: Weird Tank Game -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg border border-gray-600 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-semibold text-gray-200 mb-2">Weird Tank Game</h3>
+                        <p class="text-gray-400 mb-4">
+                            A fun game project featuring tanks. This shows my creative problem-solving and how I
+                            build interactive game mechanics. It's a look at my game development skills!
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs font-medium">Game Dev</span>
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs font-medium">JavaScript (or other)</span>
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs font-medium">Creativity</span>
+                        </div>
+                        <a href="https://github.com/Nickje2000/WeirdTankGame" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-200 font-medium">
+                            View on GitHub
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0l-7 7"></path></svg>
+                        </a>
+                    </div>
+
+                    <!-- Project Card 4: Kana Quiz -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg border border-gray-600 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-semibold text-gray-200 mb-2">Kana Quiz</h3>
+                        <p class="text-gray-400 mb-4">
+                            An interactive quiz app to help learn Kana (Japanese characters). This project shows
+                            my skills in building educational tools (which are quite bad).
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs font-medium">JavaScript (or other)</span>
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs font-medium">Web Development</span>
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs font-medium">Education Tool</span>
+                        </div>
+                        <a href="https://github.com/Nickje2000/Kana-Quiz" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-200 font-medium">
+                            View on GitHub
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0l-7 7"></path></svg>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <hr class="border-t-2 border-purple-800 my-8" />
+
+            <!-- Contact Section -->
+            <section id="contact" class="mb-8">
+                <h2 class="text-3xl font-semibold text-purple-500 mb-4">Get in Touch</h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Want to work together or just chat about tech? Feel free to reach out!
+                    I'm always looking for likeminded people and chances to build cool things.
+                </p>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="https://github.com/nickje2000" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-200 font-medium">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.499.09.679-.217.679-.481 0-.237-.008-.865-.013-1.702-2.782.602-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.46-1.11-1.46-.908-.618.069-.606.069-.606 1.003.07 1.531 1.029 1.531 1.029.892 1.529 2.341 1.087 2.91.829.091-.645.351-1.087.636-1.332-2.22-.251-4.555-1.116-4.555-4.949 0-1.092.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.379.202 2.398.099 2.65.64.7 1.028 1.596 1.028 2.688 0 3.841-2.339 4.69-4.566 4.933.359.309.678.92.678 1.855 0 1.335-.012 2.41-.012 2.72 0 .263.18.573.685.476C21.133 20.197 24 16.444 24 12.017 24 6.484 19.522 2 12 2Z" clip-rule="evenodd" /></svg>
+                            GitHub: nickje2000
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:nickdekoningalt@gmail.com" class="inline-flex items-center text-blue-400 hover:text-blue-200 font-medium">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M.057 18.223h3.582V9.7H.057v8.523zM1.83 8.163c1.17 0 1.896-.796 1.896-1.791-.01-1.01-.726-1.796-1.916-1.796-1.19 0-1.896.786-1.896 1.791 0 1.01.716 1.796 1.916 1.796zM22.502 18.223h-3.58V12.7c0-1.336-.475-2.242-1.674-2.242-1.218 0-1.942.825-1.942 2.242v5.523H11.72s.04-7.536 0-8.523h3.582v1.493c.516-.723 1.488-1.767 3.23-1.767 3.905 0 4.908 2.553 4.908 6.002v2.795z"/>
+                            </svg>
+                            Email: nickdekoningalt@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Footer -->
+            <footer class="text-center text-gray-500 text-sm mt-12 pt-8 border-t border-gray-700">
+                &copy; 2025 Nickje2000. All rights reserved. // <span class="text-purple-400">Powered by vercel</span>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
